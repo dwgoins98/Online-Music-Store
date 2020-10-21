@@ -24,6 +24,10 @@
 	background-color: var(--creme)!important;
 }
 
+.bg-dark{
+	background-color: var(--night);
+}
+
 .text-color{
 	color: var(--night);
 }
@@ -229,6 +233,10 @@ header .site-title{
 	font-size: 0.7rem;
 	color: var(--night);
 }
+.rating-big i{
+	font-size: 1.1rem;
+	color: var(--night);
+}
 
 .site-slider-three .pro-price span{
 	color: var(--night);
@@ -238,3 +246,33 @@ header .site-title{
 	background-color: var(--dark-red);
 	color: var(--creme);
 }
+
+/* Fourth Slider */
+.site-slider-four{
+	position: relative;
+	margin: 0rem;
+	margin-top: 3rem;
+}
+
+.slider-four{
+	padding: 0 0.4rem;
+}
+
+.slider-four .product img{
+	width: 80%;
+	border: 1px solid var(--night);
+}
+
+/* Footer */
+
+a:link {
+	color: var(--night);
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: var(--dark-red);
+	background-color: transparent;
+	text-decoration: underline;
+  }
