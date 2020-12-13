@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equic="X-UA-Compatible" content="ie=edge">
+
+		<title>Daniel's Music Shop</title>
+		
+		<!-- Bootstrap CDN -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		
+		<!-- Font Awesome CDN -->
+		<script src="https://kit.fontawesome.com/c1b4ff7b4d.js" crossorigin="anonymous"></script>
+
+		<!-- Slick Slider **** The link didn't work when referenced. See css file's comments for details **** -->
+		<link rel="stylesheet" type="text/css" href="./css/SlickSlider.css">
+		
+		<!--  Custom Stylesheet -->
+		<link rel="stylesheet" href="./css/style.css"/>
+	</head>
+	<body class="bg-primary-color">
+
+	<!-- Header -->
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col-12">
+
+						<!-- Drop down for Currency's -->
+						<div class="btn-group">
+						<button class="btn border dropdown-toggle my-md-4 my-2 text-left" 
+						data-toggle="dropdown" 
+						aria-haspopup="true" 
+						aria-expanded="false">
+						USD
+						</button>
+						<div class="dropdown-menu">
+							<a href="#" class=dropdown-item>ERU</a>
+							<a href="#" class=dropdown-item>MXN</a>
+							<a href="#" class=dropdown-item>GBP</a>
+							<a href="#" class=dropdown-item>JPY</a>
+						</div>
+						</div>
+					</div>		
+					<!-- /Drop down for US Currency's -->
+					
+					<!-- Title -->
+					<div class="col-md-4 col-12 text-center">
+						<h2 class="my-md-3 site-title">Daniel's Music Store</h2>
+					</div>
+					<!-- /Title -->
+
+					<!-- Sign In and Create an Account -->
+					<div class="col-md-4-col-12" style="text-align: right;position: absolute;right: 3%;margin: 10px;line-height: 18px;">
+						<p class="my-md-4 header-links">
+							<a href="#" class="px-2">Sign In</a>
+							<a href="#" class="px-1">Create an Account</a>
+						</p>
+					</div>
+					<!-- /Sign In and Create an Account -->
+				</div>
+			</div>
+
+			<!-- Navigation Menu-->
+			<!-- from Bootstrap Documentation with personalized CSS classes-->
+			<div class="container-fluid p-0 font-quicksand">
+				<nav class="navbar navbar-expand-lg text-color bg-primary-color border-bottom border-dark">
+					<a class="navbar-brand text-color" href="#">Menu</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item active">
+							<a class="nav-link text-color" href="./index.html">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+							<a class="nav-link text-color" href="#">Shop</a>
+							</li>
+							<li class="nav-item">
+							<a class="nav-link text-color" href="#">Instrument Repair</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-color" href="#">Resources</a>
+							</li>
+							<li class="nav-item">
+							<a class="nav-link disabled" style="color: lightgray;" href="#" tabindex="-1" aria-disabled="true">Lessons</a>
+							</li>
+						</ul>
+						<div class="covid-19-info">Due to COVID-19, we have temporarily suspended in-person lessons
+							</br>Please call to inquire about virtual lessons
+						</div>
+					</div>
+					<!-- Search Bar and Shopping Basket-->
+					<div class="navbar-nav">
+						<li class="nav-item border rounded-circle mx-2 search-icon">
+							<i class="fas fa-search p-2"></i> <!-- From FontAwesome-->
+						</li>
+						<li class="nav-item border rounded-circle mx-2 basket-icon">
+							<a href="cart.html"> <!-- Link to Cart -->
+								<i class="fas fa-shopping-basket p-2 text-color"></i> <!-- From FontAwesome-->
+							</a>
+						</li>
+					</div>
+				  </nav>
+				  <!-- /Bootstrap -->
+			</div>
+			<!-- /Navigation Menu-->
+		</header>
+		<!-- /Header -->
+
+		<!-- Main Section-->
+		<main>
+
+			<!-- Cart -->
+            <section class="container content-section">
+                <h2 class="section-header">CART</h2>
+                <div class="cart-row">
+                    <span class="cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column px-4">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+				</div>
+				
+				<!-- Cart Items -->
+                <div class="cart-items">				
+                    <div class="cart-row" style="padding-top: 1em;">
+                        <div class="cart-item cart-column">
+                            <img src="./Images/Alvarez.jpeg" alt="Alvarez" class="cart-item-image"
+                            width="100" height="100">
+                            <span class="cart-item-title">Alvarez CC7HCEAR</span>
+                        </div>
+                        <span class="cart-item-title cart-price" style="padding-right: 3%;">$550.00</span>
+                        <div class="cart-quantity cart-column">
+                            <input type="number" value="1" class="cart-quantity-input">
+							<button class="btn btn-danger"
+							type="button">REMOVE FROM CART</button>
+                        </div>
+					</div>
+					
+                    <div class="cart-row" style="padding-top: 3em;">
+                        <div class="cart-item cart-column">
+                            <img src="./Images/Behringer x32.png" alt="Behringer x32" class="cart-item-image"
+                            width="100" height="100">
+                            <span class="cart-item-title">Behringer x32</span>
+                        </div>
+                        <span class="cart-item-title cart-price" style="padding-right: 3%;">$2,250.99</span>
+                        <div class="cart-quantity cart-column">
+                            <input type="number" value="1" class="cart-quantity-input">
+							<button class="btn btn-danger"
+							type="button">REMOVE FROM CART</button>
+                        </div>
+                    </div>               
+                    <div class="cart-row" style="padding-top: 3em;">
+                        <div class="cart-item cart-column">
+                            <img src="./Images/Gibson.jpg" alt="Gibson" class="cart-item-image"
+                            width="100" height="100">
+                            <span class="cart-item-title">Gibson Electric Guitar</span>
+                        </div>
+                        <span class="cart-item-title cart-price" style="padding-right: 3%;">$2,150.99</span>
+                        <div class="cart-quantity cart-column">
+                            <input type="number" value="1" class="cart-quantity-input">
+							<button class="btn btn-danger"
+							type="button">REMOVE FROM CART</button>
+                        </div>
+                    </div>                
+                    <div class="cart-row" style="padding-top: 3em;">
+                        <div class="cart-item cart-column">
+                            <img src="./Images/Les Paul.png" alt="Les Paul" class="cart-item-image"
+                            width="100" height="100">
+                            <span class="cart-item-title">Les Paul Guitar</span>
+                        </div>
+                        <span class="cart-item-title cart-price" style="padding-right: 3%;">$2,099.00</span>
+                        <div class="cart-quantity cart-column">
+                            <input type="number" value="1" class="cart-quantity-input">
+							<button class="btn btn-danger"
+							type="button">REMOVE FROM CART</button>
+                        </div>
+                    </div>               
+                    <div class="cart-row" style="padding-top: 3em;">
+                        <div class="cart-item cart-column">
+                            <img src="./Images/Zildjian Cymbals.jpg" alt="Zildjian Cymbals" class="cart-item-image"
+                            width="100" height="100">
+                            <span class="cart-item-title">Zildjian Cymbals</span>
+                        </div>
+                        <span class="cart-item-title cart-price" style="padding-right: 3%;">$149.99</span>
+                        <div class="cart-quantity cart-column">
+                            <input type="number" value="1" class="cart-quantity-input">
+							<button class="btn btn-danger"
+							type="button">REMOVE FROM CART</button>
+                        </div>
+                    </div>               
+                    <div class="cart-row" style="padding-top: 3em;">
+                        <div class="cart-item cart-column">
+                            <img src="./Images/Nord 2 Piano.jpg" alt="Nord 2 Piano" class="cart-item-image"
+                            width="100" height="100">
+                            <span class="cart-item-title">Nord 2 Piano</span>
+                        </div>
+                        <span class="cart-item-title cart-price" style="padding-right: 3%;">$2,399.99</span>
+                        <div class="cart-quantity cart-column">
+                            <input type="number" value="1" class="cart-quantity-input">
+							<button class="btn btn-danger"
+							type="button">REMOVE FROM CART</button>
+                        </div>
+                    </div>                
+                    <div class="cart-row" style="padding-top: 3em;">
+                        <div class="cart-item cart-column">
+                            <img src="./Images/Focusrite Scarlett Solo Studio.jpg" alt="Focusrite Scarlett Solo Studio" class="cart-item-image"
+                            width="100" height="100">
+                            <span class="cart-item-title">Focusrite Scarlett Solo Studio</span>
+                        </div>
+                        <span class="cart-item-title cart-price" style="padding-right: 3%;">$289.00</span>
+                        <div class="cart-quantity cart-column">
+                            <input class="cart-quantity-input" type="number" value="1">
+							<button class="btn btn-danger"
+							type="button">REMOVE FROM CART</button>
+                        </div>
+                    </div>
+				</div>
+				<!-- /Cart Items -->
+
+				<!-- Cart Total -->
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">$0</span>
+				</div>
+				<!-- /Cart Total -->
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+			</section>
+			<!-- /Cart -->
+
+		</main>
+		<!-- /Main Section -->
+
+		<!-- Footer -->
+		<footer>
+			<div class="container-fluid px-5 py-5" style="margin-top: 5em;">
+				<div class="row">
+					<div class="col-md-4 col-sm-20">
+
+						<!-- Contact us -->
+						<h4>Contact Us</h4>
+						<div class="row pl-md-1 text-secondary">
+							<div class="col-12">
+								<i class="fa fa-home px-md-2 text-color"></i>
+								<small class="text-color">300 Main St. Windermere, FL, 34786</small>
+							</div>
+							<div class="col-12">
+								<i class="fa fa-paper-plane px-md-2 text-color"></i>
+								<small><a href="mailto: dgoins1@mail.valenciacollege.edu">dgoins1@mail.valenciacollege.edu</a></small>
+							</div>
+							<div class="col-12">
+								<i class="fa fa-phone-volume px-md-2 text-color"></i>
+								<small class="text-color pl-1">(407) 883-1785</small>
+							</div>
+						</div>
+						<div class="row social">
+							<div class="col-12 py-3 pl-4 text-color">
+								<a href="https://www.facebook.com/daniel.goins.965" class="text-color">
+									<i class="fab fa-facebook"></i>
+								</a>
+								<a href="https://www.instagram.com/dwgoins/" class="text-color">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- /Contact us -->
+
+					<!-- Our Stores -->
+					<div class="col-md-4 col-sm-20">
+						<h4>Our Stores</h4>
+						<div class="row pl-md-1 text-secondary">
+							<div class="col-12">
+								<small class="text-color py-4">Windermere</small>
+							</div>
+							<div class="col-12">
+								<small class="text-color py-4">College Park</small>
+							</div>
+							<div class="col-12">
+								<small class="text-color py-4">Ocoee</small>
+							</div>
+							<div class="col-12">
+								<small class="text-color py-4">Clermont</small>
+							</div>
+							<div class="col-12">
+								<small class="text-color py-4">Lake Buena Vista</small>
+							</div>
+						</div>
+					</div>
+					<!-- /Our Stores -->
+
+					<!-- Extras -->
+					<div class="col-md-4 col-sm-20">
+						<h4>Extras</h4>
+						<div class="row pl-md-1 text-secondary">
+							<div class="col-12">
+								<small class="text-color py-4">Videos</small> <!-- Add Link here-->
+							</div>
+							<div class="col-12">
+								<small class="text-color py-4">Dealers</small> <!-- Add Link here-->
+							</div>
+							<div class="col-12">
+							<small class="text-color py-4">Stories</small> <!-- Add Link here-->
+							</div>
+							<div class="col-12">
+								<small class="text-color py-4">Deals</small> <!-- Add Link here-->
+							</div>
+							<div class="col-12">
+								<small class="text-color py-4">Lessons</small> <!-- Add Link here-->
+							</div>
+						</div>
+					</div>
+					<!-- /Extras -->
+					
+				</div>
+			</div>
+		</footer>
+		<!-- /Footer -->
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="./js/SlickMin.js"></script>
+	<script src="./js/main.js"></script>
+
+	</body>
+</html>
